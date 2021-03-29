@@ -11,8 +11,11 @@ Website Analyzer, which analyse the following things
 
 ## Installation
 
-* To install the dependencies run `pipenv install`. 
-
+* git clone git@github.com:nabilshafi/WebsiteAnalyzer.git
+* go to project directoy
+* for install the dependencies run `pipenv install` 
+* run `pipenv shell` for running the environment
+* run `python web_analyzer.py https://www.facebook.com` for running the project
 
 # Code Structure
 
