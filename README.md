@@ -34,4 +34,5 @@ There are alternatives available but I found them easy to use.
 * Html versions: Identifying the html version was one of the challenge because there is no function to read doctype tag.
 * Login Form: Classification of a website containing the login form was another challenge.
 
-Ran the Web Analyzer on several different websites and manually matched them in order to verify the results. 
+# Results
+* Ran the Web Analyzer on several different websites and manually matched them in order to verify the results. 
