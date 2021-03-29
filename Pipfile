@@ -4,10 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
-[dev-packages]
-
-request = "*"
+requests = "*"
 beautifulsoup4 = "*"
 validators = "*"
 
