@@ -17,6 +17,7 @@ def url_status(url):
         except URLError:
             return False
     return False
+
 # Gathering all links inside webpage and dividing accordingly
 def gather_links(url, soup):
 
@@ -51,7 +52,7 @@ def reachable_links(external_links):
             reach += 1
     return reach
 
-def check_login_form(url):
+def check_login_form(forms):
 
     matches = ["log in", "login", "signin", "password"]
     if any(x in str(forms).lower() for x in matches):
@@ -81,7 +82,6 @@ if __name__ == '__main__':
         page = urlopen(url)
         html = page.read().decode("utf-8")
         soup = BeautifulSoup(html, "html.parser")
-        gather_links(url, soup)
         forms = soup.find('form')
         internal_links,external_links,all_links = gather_links(url,soup)
         reach = reachable_links(external_links)
@@ -93,8 +93,8 @@ if __name__ == '__main__':
         print("No. of distinct links: " + str(len(all_links)))
         print("No. of external links: " + str(len(external_links)))
         print("No. of external reachable links: " + str(reach))
-        if check_login_form(url):
-            print("Login from exists")
+        if check_login_form(forms):
+            print("Login form exists")
     else:
         print("Invalid URL")
 
