@@ -1,4 +1,4 @@
-# WebsiteAnalyzer
+## WebsiteAnalyzer
 
 ## Description
 Website Analyzer, which analyse the following things
@@ -9,7 +9,7 @@ Website Analyzer, which analyse the following things
 * Determine distinct, external links and there reachability.
 
 
-## Installation
+# Installation
 
 * git clone git@github.com:nabilshafi/WebsiteAnalyzer.git
 * go to project directoy
@@ -39,3 +39,6 @@ There are alternatives available but I found them easy to use.
 
 # Results
 * Ran the Web Analyzer on several different websites and manually matched them in order to verify the results. 
+
+# Library
+*  I will expose the check_version function because I haven't found any function to identify it.
